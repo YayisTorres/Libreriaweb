@@ -81,13 +81,14 @@ console.log(generarPassword(16));
 ## 📸 Capturas de Pantalla
 
 ### 📍 Login con intentos limitados  
-![Login con intentos limitados](imagenes/login-limitado.png)
+![Login con intentos limitados]([imagenes/login-limitado.png](https://github.com/YayisTorres/Libreriaweb/blob/main/img/loginlimite.png))
 
 ### 📍 Evaluación de seguridad de contraseñas  
-![Evaluación de contraseña](imagenes/evaluar-password.png)
+![Evaluación de contraseña](https://github.com/YayisTorres/Libreriaweb/blob/main/img/validardebil.png)
+![Evaluación de contraseña](https://github.com/YayisTorres/Libreriaweb/blob/main/img/validarfuerte.png)
 
 ### 📍 Generador de contraseñas aleatorias  
-![Generador de contraseñas](imagenes/generador-password.png)
+![Generador de contraseñas](https://github.com/YayisTorres/Libreriaweb/blob/main/img/generadorcontra.png)
 
 ---
 

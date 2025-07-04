@@ -12,7 +12,7 @@
 
 Con esta librería se busca reforzar prácticas básicas de validación del lado del cliente en interfaces web.
 ## ver online 
-![probar libreria](https://yayistorres.github.io/Libreriaweb/)
+[probar libreria](https://yayistorres.github.io/Libreriaweb/)
 ---
 
 ## 📦 Instalación

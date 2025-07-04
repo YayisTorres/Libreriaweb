@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Seguridad JS</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    .mensaje-exito { color: green; }
+    .mensaje-error { color: red; }
+    input, button { margin: 5px 0; padding: 6px; }
+    #estado, #resultadoSeguridad, #passwordGenerada { margin-top: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h2>Login con límite de intentos</h2>
+  <form id="formularioLogin">
+    <input type="text" id="username" placeholder="Usuario" required><br>
+    <input type="password" id="password" placeholder="Contraseña" required><br>
+    <button type="submit">Iniciar sesión</button>
+    <div id="estado"></div>
+  </form>
+
+  <hr>
+
+  <h2>Evaluar seguridad de contraseña</h2>
+  <input type="text" id="passwordCheck" placeholder="Escribe una contraseña">
+  <button onclick="probarSeguridad()">Evaluar</button>
+  <div id="resultadoSeguridad"></div>
+
+  <hr>
+
+  <h2>Generador de contraseña aleatoria</h2>
+  <button onclick="generarNuevaPassword()">Generar contraseña</button>
+  <div id="passwordGenerada"></div>
+
+  <!-- Aquí enlazas tu librería JS -->
+  <script src="./js/securityUtils.js"></script>
+
+  <!-- Código para enlazar las funciones de prueba -->
+  <script>
+    // Función para evaluar seguridad de una contraseña
+    function probarSeguridad() {
+      const password = document.getElementById('passwordCheck').value;
+      const resultado = evaluarSeguridadPassword(password);
+      const resultadoDiv = document.getElementById('resultadoSeguridad');
+
+      resultadoDiv.textContent = `Seguridad: ${resultado}`;
+      resultadoDiv.className = (resultado === 'Fuerte') ? 'mensaje-exito' : 'mensaje-error';
+    }
+
+    // Función para generar y mostrar una nueva contraseña aleatoria
+    function generarNuevaPassword() {
+      const nuevaPassword = generarPassword(12);
+      document.getElementById('passwordGenerada').textContent = `Contraseña generada: ${nuevaPassword}`;
+    }
+  </script>
+
+</body>
+</html>

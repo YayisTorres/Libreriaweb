@@ -128,4 +128,4 @@ Uso libre para fines educativos y demostrativos.
 ## 📞 Contacto
 
 Autor: Dayanira Torres Quiroz  
-Correo: dayanira@example.com  
+Correo: torresquirozdayanira@gmail.com  
